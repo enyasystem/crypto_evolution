@@ -33,7 +33,7 @@ if($msg)
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>User Signup | Registration and Login System</title>
+        <title>User Signup | Crypto Evolution</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript">
@@ -51,7 +51,7 @@ return true;
 </script>
 
     </head>
-    <body class="bg-primary">
+    <body class="bg-light">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -60,9 +60,9 @@ return true;
                             <div class="col-lg-7">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header">
-<h2 align="center">Registration and Login System</h2>
+<h1 align="center">Crypto Evolution</h1>
 <hr />
-                                        <h3 class="text-center font-weight-light my-4">Create Account</h3></div>
+                                        <h5 class="text-center font-weight-light my-4">Create Account</h5></div>
                                     <div class="card-body">
 <form method="post" name="signup" onsubmit="return checkpass();">
 

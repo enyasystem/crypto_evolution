@@ -96,7 +96,7 @@ $username=$_SESSION['fname'];
   
               <?php if(isset($_SESSION['fname'])){ }else{echo"<li class='nav-item'><a class='nav-link js-scroll-trigger' href='login.php?'> <i class='fa fa-user' aria-hidden='true'></i>Login</a></li> ";}?>
               <?php if(isset($_SESSION['fname'])){ }else{echo"<li class='nav-item'><a class='nav-link js-scroll-trigger' href='signup.php?'>Register</a></li> ";}?>
-              <?php if(isset($_SESSION['fname'])){ }else{echo"<li class='nav-item'><a class='nav-link js-scroll-trigger' href='buy.html?'>BUY CRYPTO</a></li> ";}?>
+              <?php if(isset($_SESSION['fname'])){ }else{echo"<li class='nav-item'><a class='nav-link js-scroll-trigger' href='#about'>BUY CRYPTO</a></li> ";}?>
               
               </li></a>
               <li class="nav-item"><a class="nav-link js-scroll-trigger" href="dashboard.php"></i><?php echo"<font color='white'> <padding='5px'>" . $fname."</font>";?></a>
@@ -147,14 +147,13 @@ $username=$_SESSION['fname'];
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Crypto <br>
-                      Currency
+                      Buy, Sell & Trade <br>
+                      Cryptocurrencies
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                    </p>
+                    CryptoEvolution is a trading platform that allows users to buy, sell, and trade cryptocurrencies with ease. Cryptocurrencies are digital assets that use encryption techniques to regulate the generation of units and verify transfers of funds. CryptoEvolution offers a user-friendly interface that enables traders to trade a wide range of cryptocurrencies, including Bitcoin, Ethereum, Ripple, and Litecoin, among others. With CryptoEvolution, traders can monitor real-time market data, track their trading history, and make informed decisions using a variety of analytical tools.                    </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="#more" class="btn1">
                         Read More
                       </a>
                     </div>
@@ -174,14 +173,15 @@ $username=$_SESSION['fname'];
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Crypto <br>
-                      Currency
+                      Our <br>
+                      Services
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                    Trading: CryptoEvolution allows users to buy, sell, and trade a wide range of cryptocurrencies, including Bitcoin, Ethereum, Ripple, Litecoin, and more.<br>
+                    <br>Real-Time Market Data: The platform provides users with real-time market data, including price charts, order books, and trade history, enabling traders to make informed decisions.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="#services" class="btn1">
                         Read More
                       </a>
                     </div>
@@ -201,14 +201,15 @@ $username=$_SESSION['fname'];
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Crypto <br>
-                      Currency
+                      About <br>
+                      Us
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                    At CryptoEvolution, our mission is to make it easy and secure for anyone to buy, sell, and trade cryptocurrencies. We believe that cryptocurrencies are the future of money, and that everyone should have the opportunity to participate in this exciting new market.<br><br>
+                    Our platform provides a user-friendly interface that enables traders to monitor real-time market data, track their trading history, and make informed decisions using a variety of analytical tools. We also offer a mobile app, so users can access their accounts and trade on the go.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      <a href="#about" class="btn1">
                         Read More
                       </a>
                     </div>
@@ -241,7 +242,7 @@ $username=$_SESSION['fname'];
     <div class="service_container">
       <div class="container ">
         <div class="heading_container heading_center">
-          <h2>
+          <h2 id="services">
             Our <span>Services</span>
           </h2>
           <p>
@@ -259,9 +260,7 @@ $username=$_SESSION['fname'];
                   Currency Wallet
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
+                A currency wallet, also known as a digital wallet or cryptocurrency wallet, is a software program that stores public and private keys used to send, receive and store cryptocurrencies.
                 </p>
                 <a href="">
                   Read More
@@ -279,9 +278,7 @@ $username=$_SESSION['fname'];
                   Security Storage
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
+                CryptoEvolution stores the majority of their users' funds in cold storage, which means that they are stored offline and not accessible via the internet. This helps to protect against hacking and other cyber attacks.
                 </p>
                 <a href="">
                   Read More
@@ -299,9 +296,7 @@ $username=$_SESSION['fname'];
                   Expert Support
                 </h5>
                 <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
+                Users can contact CryptoEvolution's support team through the "Contact Us" page on their website, where they can submit a support ticket with their question or issue. The support team aims to respond to all inquiries within a timely manner and works to resolve any problems as quickly and efficiently as possible.
                 </p>
                 <a href="">
                   Read More
@@ -327,11 +322,12 @@ $username=$_SESSION['fname'];
   <section class="about_section layout_padding">
     <div class="container  ">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 id="about">
           About <span>Us</span>
         </h2>
         <p>
-          Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum voluptatibus
+        CryptoEvolution is a trading platform that allows users to buy, sell, and trade cryptocurrencies with ease. Cryptocurrencies are digital assets that use encryption techniques to regulate the generation of units and verify transfers of funds. CryptoEvolution offers a user-friendly interface that enables traders to trade a wide range of cryptocurrencies, including Bitcoin, Ethereum, Ripple, and Litecoin, among others. With CryptoEvolution, traders can monitor real-time market data, track their trading history, and make informed decisions using a variety of analytical tools.                    </p>
+
         </p>
       </div>
       <div class="row">
@@ -346,13 +342,10 @@ $username=$_SESSION['fname'];
               We Are Crypto Evolution
             </h3>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+            CryptoEvolution, traders can monitor real-time market data, track their trading history, and make informed decisions using a variety of analytical tools. The platform also provides a secure and reliable trading environment, ensuring that users' funds and personal information are always protected. Whether you're a seasoned trader or just starting out in the world of cryptocurrencies, CryptoEvolution is a great platform to help you get started with your trading journey.
             </p>
             <p>
-              Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.
+            CryptoEvolution is a great platform to help you get started with your trading journey..
             </p>
             <a href="">
               Read More
@@ -370,7 +363,7 @@ $username=$_SESSION['fname'];
   <section class="why_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 id="more">
           Why Choose <span>Us</span>
         </h2>
       </div>
@@ -384,8 +377,7 @@ $username=$_SESSION['fname'];
               Expert Management
             </h5>
             <p>
-              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
-              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+            CryptoEvolution offers expert support to their users through various channels, including email and live chat. Their customer support team consists of knowledgeable and experienced professionals who are trained to assist users with any issues or questions they may have.
             </p>
           </div>
         </div>
@@ -398,9 +390,7 @@ $username=$_SESSION['fname'];
               Secure Investment
             </h5>
             <p>
-              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
-              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
-            </p>
+            Currency wallets can be stored on a variety of devices, including computers, mobile phones, and hardware devices. They come in different types, including hot wallets and cold wallets. A hot wallet is connected to the internet and is more convenient for frequent use, while a cold            </p>
           </div>
         </div>
         <div class="box">
@@ -412,8 +402,7 @@ $username=$_SESSION['fname'];
               Instant Trading
             </h5>
             <p>
-              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
-              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+            Real-Time Market Data: The platform provides users with real-time market data, including price charts, order books, and trade history, enabling traders to make informed decisions.
             </p>
           </div>
         </div>
@@ -426,8 +415,7 @@ $username=$_SESSION['fname'];
               Happy Customers
             </h5>
             <p>
-              Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil.
-              Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
+            Customer Support: The platform offers 24/7 customer support via email and live chat, to assist users with any questions or issues they may have. 
             </p>
           </div>
         </div>
@@ -608,16 +596,16 @@ $username=$_SESSION['fname'];
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      LusDen
+                      Trade
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      Expert Trader
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                CryptoEvolution provides a range of educational resources, such as tutorials, videos, and articles, to help users learn about cryptocurrencies, trading strategies, and market analysis. These resources are designed to help users gain a deeper understanding of the cryptocurrency market and make more informed trading decisions. </p>
               </div>
             </div>
           </div>
@@ -633,13 +621,13 @@ $username=$_SESSION['fname'];
                       Zen Court
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                     Coin Minner
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                CryptoEvolution provides a range of educational resources, such as tutorials, videos, and articles, to help users learn about cryptocurrencies, trading strategies, and market analysis. These resources are designed to help users gain a deeper understanding of the cryptocurrency market and make more informed trading decisions.
               </div>
             </div>
           </div>
@@ -655,13 +643,13 @@ $username=$_SESSION['fname'];
                       LusDen
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      Trader
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                CryptoEvolution provides a range of educational resources, such as tutorials, videos, and articles, to help users learn about cryptocurrencies, trading strategies, and market analysis. These resources are designed to help users gain a deeper understanding of the cryptocurrency market and make more informed trading decisions. </p>
               </div>
             </div>
           </div>
@@ -677,13 +665,13 @@ $username=$_SESSION['fname'];
                       Zen Court
                     </h6>
                     <p>
-                      magna aliqua. Ut
+Trader
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                CryptoEvolution provides a range of educational resources, such as tutorials, videos, and articles, to help users learn about cryptocurrencies, trading strategies, and market analysis. These resources are designed to help users gain a deeper understanding of the cryptocurrency market and make more informed trading decisions. </p>
               </div>
             </div>
           </div>
@@ -715,13 +703,13 @@ $username=$_SESSION['fname'];
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Call +1478 2563 726
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  cryptoevolution@gmail.com
                 </span>
               </a>
             </div>
@@ -747,7 +735,7 @@ $username=$_SESSION['fname'];
               Info
             </h4>
             <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+            CryptoEvolution offers expert support to their users through various channels, including email and live chat. Their customer support team consists of knowledgeable and experienced professionals who are trained to assist users with any issues or questions they may have.
             </p>
           </div>
         </div>

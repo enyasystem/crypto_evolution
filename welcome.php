@@ -21,6 +21,12 @@ if (strlen($_SESSION['id']==0)) {
         .space{
             padding: 5px;
         }
+
+        .balance_user{
+            color:fff;
+            font-weight: bold;
+            margin-left: 15px;
+        }
     </style>
     </head>
     <body class="sb-nav-fixed">
@@ -45,6 +51,12 @@ while($result=mysqli_fetch_array($query))
                             <div class="col-xl-5 col-md-6" >
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">Welcome Back <?php echo $result['fname']."<span class='space'>".$result ['lname']."</span>" ;?></div>
+                                    <?php 
+                                    $userid=$_SESSION['id'];
+                                    $query=mysqli_query($con,"select * from users where id='$userid'");
+                                    while($result=mysqli_fetch_array($query))
+                                    {?>
+                                <p class="balance_user"> Balance: $<?php echo $result['balance'];}?> </p>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="profile.php">View Profile</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
